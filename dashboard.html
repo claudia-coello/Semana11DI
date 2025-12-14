@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div data-include="components/sidebar.html"></div>
+        <main class="main">
+            <div data-include="components/header.html"></div>
+            <section class="cards">
+                <div class="card">
+                    <h3>Proyectos</h3>
+                    <p id="proyectosCount">0 Registrados</p>
+                </div>
+                <div class="card">
+                    <h3>Usuarios y vistas</h3>
+                    <p>4 Registrados</p>
+                </div>
+                <div class="card">
+                    <h3>Visitas</h3>
+                    <p>375 hoy</p>
+                </div>
+            </section>
+
+            <section class="tabla-section">
+                <div class="row" style="display: flex; justify-content: space-between; align-items: center;">
+                    <h2>Ultimos Proyectos</h2>
+                    <a href="create-proyect.html" class="btn-nuevo">➕Crear Proyecto</a>
+                </div>
+                <table id="tablaProyectos">
+                    <thead></thead>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

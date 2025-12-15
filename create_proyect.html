@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Proyecto</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/create_project.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <h2 class="logo">Mi Panel</h2>
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="#">Usuarios</a>
+                <a href="#" class="active">Proyectos</a>
+                <a href="#">Reportes</a>
+                <a href="#">Configuración</a>
+            </nav>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main">
+
+            <!-- HEADER -->
+            <header class="topbar">
+                <h1>Crear Proyecto</h1>
+                <button class="logout-btn">Cerrar sesión</button>
+            </header>
+
+            <!-- SECCIÓN DE FORMULARIO -->
+            <section class="tabla-section">
+
+                <div class="row" style="display:flex; justify-content:space-between; align-items:center;">
+                    <h2>Nuevo Proyecto</h2>
+                    <a href="dashboard.html" class="btn-nuevo">⬅ Regresar</a>
+                </div>
+
+                <div class="card form-card">
+
+                    <form id="formProyecto">
+
+                        <div class="field">
+                            <label for="titulo">Título del proyecto</label>
+                            <input id="titulo" type="text" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="descripcion">Descripción</label>
+                            <textarea id="descripcion" required></textarea>
+                        </div>
+
+                        <div class="field">
+                            <label for="imagen">Imagen del proyecto</label>
+                            <input id="imagen" type="file" accept="image/*">
+                            <img id="previewImg" class="preview">
+                        </div>
+
+                        <button class="btn" type="submit">Guardar Proyecto</button>
+
+                    </form>
+                </div>
+
+            </section>
+        </main>
+
+    </div>
+
+    <!-- SCRIPT CORRECTO -->
+    <script src="js/create_projects.js"></script>
+    <script src="js/include.js"></script>
+
+</body>
+
+</html>

@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
     countText.textContent = `${proyectos.length} registrados`;
 
     //limpiar tabla
-    tbody.innerHTML = "";
+    tbody.innerHTML = "<th></th>";
 
     proyectos.forEach((proyecto, index) => {
         const tr = document.createElement("tr");
